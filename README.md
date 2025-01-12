@@ -1,4 +1,4 @@
-# Sistema de Abertura de Chamados
+# Sistema de Abertura de Chamados: ReactJS
 
 ## Funcionalidades
 
