@@ -1,0 +1,21 @@
+.status span {
+  padding-left: 0.2em;
+  padding-right: 20px;
+}
+form input[type="radio"] {
+  margin: 15px 0;
+}
+
+form textarea {
+  resize: none;
+  height: 105px;
+}
+.status {
+  margin-bottom: 4px;
+}
+textarea {
+  width: 100%;
+}
+form button {
+  padding: 2px 20px;
+}

@@ -1,0 +1,78 @@
+.sidebar {
+  width: 230px;
+  margin: 0;
+  padding: 0;
+  background-color: #181c2e;
+  position: fixed;
+  height: 100vh;
+  overflow: auto;
+}
+.sidebar div {
+  background-image: url("../../assest/computador.png");
+  background-color: #181c2e;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  height: 150px;
+}
+.sidebar div {
+  padding-top: 30px;
+}
+.sidebar div img {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(2px 5px 6px #121212);
+  -webkit-filter: drop-shadow(2px 5px 6px #121212);
+}
+.sidebar a {
+  padding: 10px;
+  display: flex;
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.7);
+  align-items: center;
+  flex-direction: row;
+  transition: all 0.4s ease;
+}
+.sidebar a svg {
+  margin-right: 0.5rem;
+}
+.sidebar a:hover {
+  background-color: #121212;
+  color: #fff;
+  border-radius: 15px;
+}
+.content {
+  margin-left: 230px;
+  padding: 1px 16px;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  div.content {
+    margin-left: 0;
+  }
+  .sidebar a {
+    float: left;
+  }
+  .sidebar div {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .sidebar a svg {
+    display: none;
+  }
+}

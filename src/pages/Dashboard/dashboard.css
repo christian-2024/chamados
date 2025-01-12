@@ -1,0 +1,134 @@
+.new {
+  float: right;
+  margin-bottom: 1.5em;
+  background-color: #83bf02;
+  padding: 0.5em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  transition: ease-in-out 0.3s;
+}
+.new svg {
+  margin-right: 0.5em;
+}
+.new:hover {
+  background-color: #6f9b00;
+  transform: scale(1.1);
+}
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+table {
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+  filter: drop-shadow(2px 3px 5px #12121288);
+  -webkit-filter: drop-shadow(2px 3px 5px #12121288);
+}
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+table td .action {
+  border: 0;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+table td .action svg {
+  vertical-align: middle;
+}
+
+table td .badge {
+  padding: 5px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+@media screen and (max-width: 660px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    height: 1px;
+    margin: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+.container h3 {
+  text-align: center;
+  margin: 1em 0;
+}
+.content h3 {
+  text-align: left;
+  margin: 1em 0;
+}
+.btnMore {
+  margin: 12px;
+  color: #fff;
+  background-color: #181c2e;
+  border: 0;
+  padding: 0.5em;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+}
